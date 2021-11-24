@@ -6,9 +6,10 @@ syntax enable
 set showcmd
 set encoding=utf-8
 set showmatch
-set sw=2
-set tabstop=2
-set softtabstop=2
+set tabstop     =2
+set softtabstop =2
+set shiftwidth  =2
+set expandtab
 set relativenumber
 set noshowmode
 set cursorline
@@ -38,6 +39,7 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
 	Plug 'tpope/vim-fugitive'
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'maxmellon/vim-jsx-pretty'
 	" Plug 'pangloss/vim-javascript'
@@ -60,6 +62,7 @@ source $HOME/.config/nvim/plug-config/closetag.vim
 let g:closetag_filenames = '*.html,*.xhtml,*.xml,*.js,*.jsx,*.tsx,*.html.erb,*.md'
 let g:closetag_xhtml_filenames = '*.js,*.jsx,*.tsx'
 let g:vim_jsx_pretty_highlight_close_tag=1
+set runtimepath^=~/Coding/coc-eslint
 " Maps
 nmap <Leader>s <Plug>(easymotion-s2)
 nmap <Leader>nt :NERDTreeFind<CR>
@@ -68,9 +71,11 @@ nmap <Leader>q :q<CR>
 nmap <Leader>Q :q!<CR>
 nmap <Leader>o o<ESC>
 nmap <Leader>O O<ESC>
+nmap <leader>; A;<ESC>
 nmap <Leader>/ :let @/=""<CR>
 nmap <Leader>L :bnext<cr>
 nmap <Leader>H :bprev<cr>
 nmap <Leader>l :tabn<cr>
 nmap <Leader>h :tabp<cr>
-nmap <Leader>F :FZF<cr>
+nmap <Leader>F :Files<cr>
+nmap <Leader>b :Buffers<cr>

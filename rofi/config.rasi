@@ -1,22 +1,6 @@
+/** Basic config file **/
+
 configuration {
-	modi: "window,run,ssh,drun";
-	width: 100;
-	lines: 8;
-	columns: 1;
-	font: "Fira Code 12";
-	icon-theme: "Vimix-Doder-dark";
-	bw: 0;
-	padding: 600;
-	show-icons: true;
-	terminal: "kitty";
-	matching: "fuzzy";
-	line-margin: 14;
-	hide-scrollbar: true;
-	fullscreen: false;
-	fake-transparency: false;
-	dpi: 120;
-	color-normal: "argb:00000000, #ebdbb2, argb:00000000, argb:00000000, #d79921";
-	color-urgent: "argb:2ccc241d, #ebdbb2, argb:00000000, #a54242, #2E3440";
-	color-active: "argb:2ccc241d, #ebdbb2, argb:00000000, #4491ed, #2E3440";
-	color-window: "argb:fc282a36, #ebdbb2, argb:00000000";
+  show-icons:         true;
+  icon-theme:         "Papirus";
 }
