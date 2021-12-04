@@ -40,7 +40,8 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'maxmellon/vim-jsx-pretty'
-	" Plug 'pangloss/vim-javascript'
+	Plug 'pangloss/vim-javascript'
+	Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npm install'  }
 	" Plug 'mxw/vim-jsx'
 call plug#end()
 
