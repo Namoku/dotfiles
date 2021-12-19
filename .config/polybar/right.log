@@ -6,4 +6,3 @@ polybar|notice:  Loaded font "Fira Code:style=Regular:size=11" (name=Fira Code, 
 polybar|notice:  Loaded font "Font Awesome 5 Brands Regular:style=Regular:size=11" (name=Font Awesome 5 Brands, offset=3, file=/home/nando/.local/share/fonts/Font Awesome 5 Brands-Regular-400.otf)
 polybar|notice:  Loaded font "Font Awesome 5 Free Solid:style=Solid:size=11" (name=Font Awesome 5 Free, offset=3, file=/home/nando/.local/share/fonts/Font Awesome 5 Free-Solid-900.otf)
 polybar|notice:  Loaded font "Font Awesome 5 Free Regular:style=Regular:size=11" (name=Font Awesome 5 Free, offset=3, file=/home/nando/.local/share/fonts/Font Awesome 5 Free-Regular-400.otf)
-polybar|error: Failed to query _XEMBED_INFO, removing client... (XCB_WINDOW (3))

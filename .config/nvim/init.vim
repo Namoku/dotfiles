@@ -61,6 +61,7 @@ source $HOME/.config/nvim/plug-config/closetag.vim
 let g:closetag_filenames = '*.html,*.xhtml,*.xml,*.js,*.jsx,*.tsx,*.html.erb,*.md'
 let g:closetag_xhtml_filenames = '*.js,*.jsx,*.tsx'
 let g:vim_jsx_pretty_highlight_close_tag=1
+let g:vim_json_conceal=0
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " Maps
 nmap <Leader>s <Plug>(easymotion-s2)
