@@ -19,34 +19,34 @@ set encoding=UTF-8
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
 
-  " Themes
-  Plug 'morhetz/gruvbox'
-  Plug 'vim-airline/vim-airline'
-	Plug 'mhartington/oceanic-next'
-	Plug 'sainnhe/sonokai'
-	Plug 'dracula/vim', { 'as': 'dracula' }
-  Plug 'joshdick/onedark.vim'
+" Themes
+Plug 'morhetz/gruvbox'
+Plug 'vim-airline/vim-airline'
+Plug 'mhartington/oceanic-next'
+Plug 'sainnhe/sonokai'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'joshdick/onedark.vim'
 
-  " IDE
-  Plug 'easymotion/vim-easymotion'
-  Plug 'scrooloose/nerdtree'
-  Plug 'christoomey/vim-tmux-navigator'
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'alvan/vim-closetag'
-  Plug 'mattn/emmet-vim'
-  Plug 'norcalli/nvim-colorizer.lua'
-  Plug 'tpope/vim-commentary'
-  Plug 'Yggdroot/indentLine'
-  Plug 'andymass/vim-matchup'
-  Plug 'jiangmiao/auto-pairs'
-	Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
-	Plug 'tpope/vim-fugitive'
-	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-	Plug 'junegunn/fzf.vim'
-	Plug 'ryanoasis/vim-devicons'
-	Plug 'maxmellon/vim-jsx-pretty'
-	Plug 'pangloss/vim-javascript'
-	" Plug 'mxw/vim-jsx'
+" IDE
+Plug 'easymotion/vim-easymotion'
+Plug 'scrooloose/nerdtree'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'alvan/vim-closetag'
+Plug 'mattn/emmet-vim'
+Plug 'norcalli/nvim-colorizer.lua'
+Plug 'tpope/vim-commentary'
+Plug 'Yggdroot/indentLine'
+Plug 'andymass/vim-matchup'
+Plug 'jiangmiao/auto-pairs'
+Plug 'pineapplegiant/spaceduck', { 'branch': 'main' }
+Plug 'tpope/vim-fugitive'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'ryanoasis/vim-devicons'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'pangloss/vim-javascript'
+" Plug 'mxw/vim-jsx'
 call plug#end()
 
 " Mixed config
@@ -57,7 +57,7 @@ colorscheme onedark
 let NERDTreeQuitOnOpen=1
 let mapleader="\<Space>"
 lua require'colorizer'.setup()
- 
+
 " Config for plugins
 source $HOME/.config/nvim/plug-config/airline.vim
 source $HOME/.config/nvim/plug-config/coc.vim
