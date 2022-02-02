@@ -14,6 +14,7 @@ set relativenumber
 set noshowmode
 set cursorline
 set termguicolors
+set encoding=UTF-8
 
 " Plugins
 call plug#begin('~/.config/nvim/plugged')
@@ -23,6 +24,8 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'vim-airline/vim-airline'
 	Plug 'mhartington/oceanic-next'
 	Plug 'sainnhe/sonokai'
+	Plug 'dracula/vim', { 'as': 'dracula' }
+  Plug 'joshdick/onedark.vim'
 
   " IDE
   Plug 'easymotion/vim-easymotion'
@@ -42,13 +45,13 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'junegunn/fzf.vim'
 	Plug 'ryanoasis/vim-devicons'
 	Plug 'maxmellon/vim-jsx-pretty'
-	" Plug 'pangloss/vim-javascript'
+	Plug 'pangloss/vim-javascript'
 	" Plug 'mxw/vim-jsx'
 call plug#end()
 
 " Mixed config
-let g:sonokai_style = 'default'
-colorscheme sonokai
+" let g:sonokai_style = 'default'
+colorscheme onedark
 " let g:airline#extensions#tabline#enabled = 1
 
 let NERDTreeQuitOnOpen=1
@@ -62,7 +65,9 @@ source $HOME/.config/nvim/plug-config/closetag.vim
 let g:closetag_filenames = '*.html,*.xhtml,*.xml,*.js,*.jsx,*.tsx,*.html.erb,*.md'
 let g:closetag_xhtml_filenames = '*.js,*.jsx,*.tsx'
 let g:vim_jsx_pretty_highlight_close_tag=1
-set runtimepath^=~/Coding/coc-eslint
+let g:airline#extensions#tabline#fnamemod = '::t'
+let g:vim_json_conceal=0
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
 " Maps
 nmap <Leader>s <Plug>(easymotion-s2)
 nmap <Leader>nt :NERDTreeFind<CR>
@@ -79,3 +84,5 @@ nmap <Leader>l :tabn<cr>
 nmap <Leader>h :tabp<cr>
 nmap <Leader>F :Files<cr>
 nmap <Leader>b :Buffers<cr>
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
