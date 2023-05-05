@@ -26,6 +26,7 @@ Plug 'mhartington/oceanic-next'
 Plug 'sainnhe/sonokai'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'joshdick/onedark.vim'
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 " IDE
 Plug 'easymotion/vim-easymotion'
@@ -51,8 +52,9 @@ call plug#end()
 
 " Mixed config
 " let g:sonokai_style = 'default'
-colorscheme onedark
+colorscheme tokyonight
 " let g:airline#extensions#tabline#enabled = 1
+let g:tokyonight_style = "storm"
 
 let NERDTreeQuitOnOpen=1
 let mapleader="\<Space>"
@@ -83,6 +85,7 @@ nmap <Leader>H :bprev<cr>
 nmap <Leader>l :tabn<cr>
 nmap <Leader>h :tabp<cr>
 nmap <Leader>F :Files<cr>
+nmap <Leader>R :Rg<cr>
 nmap <Leader>b :Buffers<cr>
 vmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
